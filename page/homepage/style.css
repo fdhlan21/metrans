@@ -1,0 +1,186 @@
+/* Gaya untuk navbar */
+html, * {
+    padding:0px;
+    margin:0px;
+}
+
+header {
+    background-color: transparent; /* Warna latar belakang navbar */
+    color: white; /* Warna teks di dalam navbar */
+    display: flex;
+    justify-content: space-between; /* Untuk mengatur elemen navbar ke sisi kanan dan kiri */
+    align-items: center; /* Untuk mengatur elemen secara vertikal di tengah */
+    padding: 10px; /* Jarak antara teks dan pinggiran navbar */
+
+     font-family: "Poppins", sans-serif;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px; /* Jarak antara item navbar */
+}
+
+nav a {
+    text-decoration: none;
+    color: black; /* Warna teks tautan di dalam navbar */
+}
+
+/* Gaya untuk logo */
+.logo {
+    width: 100px; /* Lebar logo */
+    height: auto;
+    display: block; /* Agar logo muncul di pojok kiri navbar */
+}
+
+/* Menggeser kontak ke pojok kanan */
+nav ul {
+    margin-left: auto;
+}
+
+/* Gaya untuk konten utama (Anda dapat menambahkan konten utama sesuai kebutuhan) */
+main {
+    padding: 20px;
+}
+
+
+/* Gaya untuk tombol "Booking Sekarang" */
+.booking-button {
+    background-color: #000; /* Warna latar belakang tombol default */
+    color: #fff; /* Warna teks tombol default */
+    padding: 10px 20px; /* Padding tombol */
+    text-decoration: none; /* Menghapus garis bawah default tautan */
+    border-radius: 5px; /* Memberikan sudut tombol */
+    transition: background-color 0.3s, color 0.3s; /* Animasi transisi saat hover */
+   
+}
+
+.booking-button:hover {
+    background-color: #fff; /* Warna latar belakang tombol saat di hover */
+    color: #000; /* Warna teks tombol saat di hover */
+}
+
+/* Menggeser tombol ke kanan */
+.booking-button {
+    margin-left: auto;
+}
+
+/* Gaya untuk judul konten utama */
+main h2 {
+    font-family: "Poppins", sans-serif; /* Menggunakan font Poppins */
+    color: #333; /* Warna teks judul */
+   font-size: 40px;
+   text-align: center;
+}
+/* Gaya untuk paragraf dalam konten utama */
+main p {
+    font-family: "Poppins", sans-serif; /* Menggunakan font Poppins */
+    color: #666; /* Warna teks paragraf */
+    line-height: 1.6; /* Jarak antara baris paragraf */
+    font-size:20px;
+    text-align: center;
+}
+
+/* Gaya untuk tombol "Sewa Sekarang!" */
+.sewa-button {
+    display: block;
+    background-color: #fff;
+    color: #000;
+    padding: 10px 20px;
+    text-decoration: none;
+    border: 2px solid #000;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+    margin: 0 auto;
+    text-align: center; /* Untuk mengatur teks menjadi tengah */
+    max-width: 200px; /* Mengatur lebar maksimum tombol */
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.sewa-button:hover {
+    background-color: rgb(245, 245, 91);
+    color: #000;
+    border-color: #000;
+}
+
+
+/* Gaya untuk kontainer mobil yang bergerak */
+.moving-car-container {
+   overflow: hidden;
+    position: relative;
+    width: 100%;
+   height: 100px; /* Tinggi kontainer, sesuaikan sesuai kebutuhan */
+}
+
+footer {
+background-color: #000; /* Warna latar belakang hitam */
+    color: #fff; /* Warna teks putih */
+    padding: 20px; /* Padding footer */
+    position: relative; /* Untuk memungkinkan gambar mobil berada di atas footer */
+    z-index: 2; /* Mengatur footer agar tampil di atas gambar mobil */
+    margin-top: 10%;
+}
+
+/* Gaya untuk gambar yang bergerak */
+.moving-car {
+position: absolute;
+    width: 100px;
+    height: auto;
+    animation-name: moveRight;
+  animation-duration: 10s; /* Mengubah durasi animasi menjadi 10 detik (atau sesuai preferensi Anda) */
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    margin-top: -80px;; /* Posisi bawah */
+    z-index: 1; /* Mengatur gambar mobil agar tampil di bawah footer */
+}
+
+/* Animasi mobil bergerak ke kanan */
+@keyframes moveRight {
+    0% {
+        left: -100px; /* Posisi awal di luar layar kiri */
+    }
+    100% {
+        left: 100%; /* Posisi akhir di luar layar kanan */
+    }
+}
+
+/* Gaya untuk card "Tentang Me Trans" */
+.about-card {
+    /* background-color: rgb(245, 245, 91); */
+    /* Warna latar belakang kuning */
+
+    /* Border hitam 1px solid */
+    /* Padding 20px sekeliling */
+    color: #000;
+    /* Warna teks (hitam) */
+    text-align: center;
+    /* Teks menjadi tengah */
+    margin:10px;
+    margin-top: 10%;
+}
+
+.tentang {
+    justify-content: space-around;
+    display: flex;
+    
+}
+
+.tentang1, .tentang2, .tentang3, .tentang4 {
+    padding:10px;
+    gap: 10px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    text-align: left;
+    font-size: 15px;
+    background-color: rgb(245, 245, 91);
+    width: 300px;
+    border-radius:10px;
+    border: 2px solid #000;
+}
+
